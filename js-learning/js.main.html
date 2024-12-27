@@ -37,7 +37,7 @@
             document.getElementById("demo").innerHTML = "The value of z is " + z;
         </code>
     </pre>
-    <h2>JavaScript Let</h2>
+    <h2 id="jslet">JavaScript Let</h2>
     <p>The let statement declares a block-scoped local variable, optionally initializing it to a value.</p>
     <h3>Example</h3>
     <pre>
@@ -50,7 +50,7 @@
             console.log(x);
         </code>
     </pre>
-    <h2>JavaScript Const</h2>
+    <h2 id="jsconst">JavaScript Const</h2>
     <p>The const statement declares a read-only named constant. Constants are block-scoped, much like variables defined using the let statement. The value of a constant cannot change through reassignment, and it can't be redeclared.</p>
     <h3>Example</h3>
     <pre>
@@ -60,7 +60,7 @@
             console.log(x);
         </code>
     </pre>
-    <h2>JavaScript Var</h2>
+    <h2 id="jsvar">JavaScript Var</h2>
     <p>The var statement declares a function-scoped or globally-scoped variable, optionally initializing it to a value.</p>
     <h3>Example</h3>
     <pre>
@@ -84,7 +84,23 @@
     <p>Variables declared outside a function become global variables. Global variables can be accessed from any function in the program. Variables declared inside a function are local variables. Local variables can only be accessed from within the function where they are declared.</p>
     <h2>Accessing variables from another file in JavaScript</h2>
     <p>Variables can be accessed from another file in JavaScript by exporting and importing them using the export and import keywords.</p>
+    <section class="editor">
+   
+        <h1>Try Yourself Variables we have learnt </h1>
+        <p>Write your JavaScript code below and click "Run Code" to try it out!</p>
     
+        <!-- Textarea for user to write JavaScript code -->
+        <textarea id="code-editor" placeholder="Write your JavaScript code here..."></textarea>
+        
+        <!-- Button to execute the code -->
+        <button id="run-code">Run Code</button>
+    
+        <!-- Textarea for displaying the output or errors after running the code -->
+        <textarea id="output" readonly placeholder="The output or error will be displayed here..."></textarea>
+    
+<br><br>
 
     <script src="../js-learning/js-files/script.js"></script>
+
+    </body>
 </html>
