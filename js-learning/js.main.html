@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn JavaScript</title>
+    <link rel="stylesheet" href="../js-learning/css-files/js.styles.css"/>
+</head>
+<body>
+    <h1>JavaScript Concepts for Beginners</h1>
+    <p>Let's start learning JavaScript!</p>
+    <h2>JavaScript Variables and Datatypes</h2>
+    <ul>
+        <li><a href="#jsvariables">JavaScript Variables</a></li>
+        <li><a href="#jslet">JavaScript Let</a></li>
+        <li><a href="#jsconst">JavaScript Const</a></li>
+        <li><a href="#jsvar">JavaScript Var</a></li>
+        <li><a href="#jsvariables-differences">Difference between var, let and const keywords in JavaScript
+        </a></li>
+        <li><a href="#globlocvar">Global and Local variables in JavaScript</a></li>
+        <li><a href="#accesvar">Accessing variables from another file in JavaScript</a></li>
+
+
+        <!-- <li><a href="#jsdatatypes">JavaScript Datatypes</a></li> -->
+    </ul>
+    <h2>JavaScript Variables</h2>
+    <p>Variables are used to store data values in JavaScript. A variable is a container for storing data values.</p>
+    <h3>Declaring Variables in JavaScript</h3>
+    <p>Before you can use a variable, you must declare it. JavaScript uses the var keyword to declare variables.</p>
+    <h3>Example</h3>
+    <pre>
+        <code>
+            var x;
+            x = 5;
+            var y = 6;
+            var z = x + y;
+            document.getElementById("demo").innerHTML = "The value of z is " + z;
+        </code>
+    </pre>
+    <h2>JavaScript Let</h2>
+    <p>The let statement declares a block-scoped local variable, optionally initializing it to a value.</p>
+    <h3>Example</h3>
+    <pre>
+        <code>
+            let x = 1;
+            if (x === 1) {
+                let x = 2;
+                console.log(x);
+            }
+            console.log(x);
+        </code>
+    </pre>
+    <h2>JavaScript Const</h2>
+    <p>The const statement declares a read-only named constant. Constants are block-scoped, much like variables defined using the let statement. The value of a constant cannot change through reassignment, and it can't be redeclared.</p>
+    <h3>Example</h3>
+    <pre>
+        <code>
+            const x = 1;
+            x = 2; // This will cause an error
+            console.log(x);
+        </code>
+    </pre>
+    <h2>JavaScript Var</h2>
+    <p>The var statement declares a function-scoped or globally-scoped variable, optionally initializing it to a value.</p>
+    <h3>Example</h3>
+    <pre>
+        <code>
+            var x = 1;
+            if (x === 1) {
+                var x = 2;
+                console.log(x);
+            }
+            console.log(x);
+        </code>
+    </pre>
+    <h2>Difference between var, let and const keywords in JavaScript</h2>
+    <p>There are some differences between var, let and const keywords in JavaScript.</p>
+    <ul>
+        <li>var declarations are globally scoped or function scoped while let and const are block scoped.</li>
+        <li>var variables can be updated and re-declared within its scope; let variables can be updated but not re-declared; const variables can neither be updated nor re-declared.</li>
+        <li>They are all hoisted to the top of their function or block.</li>
+    </ul>
+    <h2>Global and Local variables in JavaScript</h2>
+    <p>Variables declared outside a function become global variables. Global variables can be accessed from any function in the program. Variables declared inside a function are local variables. Local variables can only be accessed from within the function where they are declared.</p>
+    <h2>Accessing variables from another file in JavaScript</h2>
+    <p>Variables can be accessed from another file in JavaScript by exporting and importing them using the export and import keywords.</p>
+    
+
+    <script src="../js-learning/js-files/script.js"></script>
+</html>
